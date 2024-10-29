@@ -5,8 +5,8 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: canary
-    version: "1.0"
+    app: bloaty-mcbloatface
+    #version: "1.0"
   ports:
     - protocol: TCP
       port: 80
