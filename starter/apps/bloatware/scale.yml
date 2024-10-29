@@ -1,13 +1,13 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: hello-world
+  name: bloaty-mcbloatface
   namespace: udacity
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: hello-world
+    name: bloaty-mcbloatface
   minReplicas: 1
   maxReplicas: 10
   metrics:
