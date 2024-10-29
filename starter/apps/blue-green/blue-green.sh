@@ -28,7 +28,7 @@ kubectl patch service $SERVICE -n $NAMESPACE -p '{"spec": {"selector": {"app": "
 
 # Check if the service is reachable
 # This assumes you know the external URL or IP to access the service
-SERVICE_URL=$(kubectl get service $SERVICE -n $NAMESPACE -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+SERVICE_URL=$(kubectl get service green-svc -n udacity -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
 
 # Function to check service availability
 check_service() {
