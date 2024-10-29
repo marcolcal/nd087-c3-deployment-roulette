@@ -5,7 +5,7 @@
 set -e
 
 # Define service and namespace
-SERVICE="blue-green"
+SERVICE="green-svc"
 NAMESPACE="udacity"
 
 # Deploy the green deployment
